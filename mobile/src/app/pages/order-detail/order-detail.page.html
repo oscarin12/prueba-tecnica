@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/orders"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" *ngIf="order as o">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ o.title }}</ion-card-title>
+      <ion-card-subtitle>Estado: {{ o.status }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p><strong>Fecha:</strong> {{ o.createdAt }}</p>
+      <p><strong>Descripción:</strong> {{ o.description || 'Sin descripción' }}</p>
+
+      <ion-button expand="block" class="ion-margin-top" (click)="advanceStatus()">
+        Avanzar estado
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
