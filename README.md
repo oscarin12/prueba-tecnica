@@ -243,3 +243,6 @@ Verifica en `android/app/src/main/AndroidManifest.xml`:
 - PhpMyAdmin: `http://localhost:8081`
 - DB (host): `localhost:3307`
 - Android Emulator hacia PC: `http://10.0.2.2:8000`
+# 3) Puertos y URLs usadas
+- se claro los estado con el cliente con 3 estados: Pendiente -> En curso -> Finalizadas
+- -los entornos dev/prod no disponia una ruta para prod
