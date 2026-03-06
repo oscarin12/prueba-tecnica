@@ -1,0 +1,7 @@
+# Configuración de Monolog para el entorno de QA (Quality Assurance)
+monolog:
+  handlers:
+    main:
+      type: stream
+      path: "%kernel.logs_dir%/%kernel.environment%.log"
+      level: info
