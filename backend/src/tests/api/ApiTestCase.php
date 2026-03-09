@@ -12,7 +12,7 @@ abstract class ApiTestCase extends WebTestCase
         $server = array_merge([
             'CONTENT_TYPE' => 'application/json',
             'HTTP_ACCEPT' => 'application/json',
-        ], $headers);
+        ], $headers);  
 
         $client->request($method, $url, [], [], $server, json_encode($data));
         return $client;
